@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PuppyPedia</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>PuppyPedia
+        <!-- Tassikon efter texten -->
+        <svg class="paw-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+          <path d="M21 20c-3 0-6-3-6-7s3-7 6-7 6 3 6 7-3 7-6 7zm22 0c-3 0-6-3-6-7s3-7 6-7 6 3 6 7-3 7-6 7zm-29 8c-4 0-8-4-8-9s4-9 8-9 8 4 8 9-4 9-8 9zm36 0c-4 0-8-4-8-9s4-9 8-9 8 4 8 9-4 9-8 9zM32 28c-8 0-14 6-14 14 0 6 6 12 14 12s14-6 14-12c0-8-6-14-14-14z"/>
+        </svg>
+      </h1>
+    </div>
+    <p>Din digitala uppslagsbok om hundar! Utforska hundraser, lär dig om deras egenskaper, aktivitetsnivå, barnvänlighet och mycket mer. Perfekt för både blivande hundägare och erfarna hundälskare som vill hitta sin perfekta fyrbenta vän.</p>
+  </header>
+
+  <div class="filters">
+    <input type="text" id="search" placeholder="Sök hundras...">
+
+    <select id="sizeFilter">
+      <option value="">Storlek</option>
+      <option value="liten">Liten</option>
+      <option value="medel">Medel</option>
+      <option value="stor">Stor</option>
+    </select>
+
+    <select id="activityFilter">
+      <option value="">Aktivitetsnivå</option>
+      <option value="låg">Låg</option>
+      <option value="medel">Medel</option>
+      <option value="hög">Hög</option>
+    </select>
+
+    <select id="kidsFilter">
+      <option value="">Barnvänlig</option>
+      <option value="ja">Ja</option>
+      <option value="nej">Nej</option>
+    </select>
+
+    <select id="allergyFilter">
+      <option value="">Allergivänlig</option>
+      <option value="ja">Ja</option>
+      <option value="nej">Nej</option>
+    </select>
+
+    <select id="lifestyleFilter">
+      <option value="">Passar för</option>
+      <option value="familj">Familj</option>
+      <option value="ensamboende">Ensamboende</option>
+    </select>
+  </div>
+
+  <div class="container" id="dogContainer"></div>
+
+  <section id="favorites">
+    <h2>PuppyPedia</h2>
+    <div class="favorite-list" id="favoriteList"></div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PuppyPedia.se</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
