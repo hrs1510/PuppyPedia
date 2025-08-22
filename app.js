@@ -1,14 +1,111 @@
 const dogs = [
-  { name: "Chihuahua", size: "Liten", activity: "Låg", kids: "Nej", allergy: "Ja", lifestyle: "Ensamboende", description: "En liten, livlig hund som trivs i lägenhet. Kräver inte mycket motion.", img: "https://cdn2.thedogapi.com/images/B1pDZx9Nm.jpg" },
-  { name: "Labrador Retriever", size: "Stor", activity: "Hög", kids: "Ja", allergy: "Nej", lifestyle: "Familj", description: "En glad och aktiv hund som älskar barn och behöver mycket motion.", img: "https://cdn2.thedogapi.com/images/B1uW7l5VX.jpg" },
-  { name: "Fransk Bulldog", size: "Medel", activity: "Låg", kids: "Ja", allergy: "Nej", lifestyle: "Ensamboende", description: "Charmig, lugn och perfekt för stadsmiljö.", img: "https://cdn2.thedogapi.com/images/HyWNfxc47.jpg" },
-  { name: "Border Collie", size: "Medel", activity: "Hög", kids: "Ja", allergy: "Nej", lifestyle: "Familj", description: "Extremt intelligent hund som behöver mycket träning och aktivering.", img: "https://cdn2.thedogapi.com/images/sGQvQUpsp.jpg" },
-  { name: "Pudel (Toy)", size: "Liten", activity: "Medel", kids: "Ja", allergy: "Ja", lifestyle: "Familj", description: "Allergivänlig hund med hög intelligens och vänlig personlighet.", img: "https://cdn2.thedogapi.com/images/By4A-eqE4.jpg" },
-  { name: "Golden Retriever", size: "Stor", activity: "Hög", kids: "Ja", allergy: "Nej", lifestyle: "Familj", description: "En av de mest populära familjehundarna. Snäll, lojal och aktiv.", img: "https://cdn2.thedogapi.com/images/HJ7Pzg5EQ.jpg" },
-  { name: "Mops", size: "Liten", activity: "Låg", kids: "ja", allergy: "Nej", lifestyle: "Ensamboende", description: "En charmig och rolig sällskapshund. Passar bra för små bostäder.", img: "https://cdn2.thedogapi.com/images/HyJvcl9N7.jpg" },
-  { name: "Siberian Husky", size: "Stor", activity: "Hög", kids: "Ja", allergy: "Nej", lifestyle: "Familj", description: "Energisk hund med stark flockkänsla. Kräver mycket motion.", img: "https://cdn2.thedogapi.com/images/S17ZilqNm.jpg" },
-  { name: "Shih Tzu", size: "Liten", activity: "Låg", kids: "Ja", allergy: "Ja", lifestyle: "Familj", description: "Liten, lugn och allergivänlig. Passar bra för både äldre och familjer.", img: "https://cdn2.thedogapi.com/images/B1SV7gqE7.jpg" },
-  { name: "Dobermann", size: "Stor", activity: "Hög", kids: "Nej", allergy: "Nej", lifestyle: "nsamboende", description: "En lojal och beskyddande hund, bäst lämpad för erfarna ägare.", img: "https://cdn2.thedogapi.com/images/HyL3bl94Q.jpg" }
+  {
+    name: "CHIHUAHUA",
+    size: "Small",
+    activity: "Low",
+    kids: "No",
+    allergy: "Yes",
+    lifestyle: "Living, alone",
+    description:
+      "A small, lively dog that thrives in an apartment. Doesn't require much exercise.",
+    img: "https://cdn2.thedogapi.com/images/B1pDZx9Nm.jpg",
+  },
+  {
+    name: "LABRADOR RETRIEVER",
+    size: "Large",
+    activity: "High",
+    kids: "Yes",
+    allergy: "No",
+    lifestyle: "Family",
+    description:
+      "A happy and active dog that loves children and needs a lot of exercise.",
+    img: "https://cdn2.thedogapi.com/images/B1uW7l5VX.jpg",
+  },
+  {
+    name: "FRENCH BULLDOG",
+    size: "Medium",
+    activity: "Low",
+    kids: "Yes",
+    allergy: "No",
+    lifestyle: "Lonely",
+    description: "Charming, quiet and perfect for urban environment.",
+    img: "https://cdn2.thedogapi.com/images/HyWNfxc47.jpg",
+  },
+  {
+    name: "BORDER COLLIE",
+    size: "Medium",
+    activity: "High",
+    kids: "Yes",
+    allergy: "No",
+    lifestyle: "Family",
+    description:
+      "Extremely intelligent dog that needs a lot of training and activation.",
+    img: "https://cdn2.thedogapi.com/images/sGQvQUpsp.jpg",
+  },
+  {
+    name: "Poodle (TOY)",
+    size: "Small",
+    activity: "Medium",
+    kids: "Yes",
+    allergy: "Yes",
+    lifestyle: "Family",
+    description:
+      "Hypoallergenic dog with high intelligence and friendly personality.",
+    img: "https://cdn2.thedogapi.com/images/rJFJVxc4m.jpg",
+  },
+  {
+    name: "GOLDEN RETRIEVER",
+    size: "Large",
+    activity: "High",
+    kids: "Yes",
+    allergy: "No",
+    lifestyle: "Family",
+    description: "One of the most popular family dogs. Kind, loyal and active.",
+    img: "https://cdn2.thedogapi.com/images/HJ7Pzg5EQ.jpg",
+  },
+  {
+    name: "MOPS",
+    size: "Small",
+    activity: "Low",
+    kids: "No",
+    allergy: "No",
+    lifestyle: "Lonely",
+    description: "A charming and fun companion dog. Suitable for small homes.",
+    img: "https://cdn2.thedogapi.com/images/HyJvcl9N7.jpg",
+  },
+  {
+    name: "SIBERIAN HUSKY",
+    size: "Large",
+    activity: "High",
+    kids: "Yes",
+    allergy: "No",
+    lifestyle: "Family",
+    description:
+      "Energetic dog with a strong pack feeling. Requires a lot of exercise.",
+    img: "https://cdn2.thedogapi.com/images/S17ZilqNm.jpg",
+  },
+  {
+    name: "SHIH TZU",
+    size: "Small",
+    activity: "Low",
+    kids: "Yes",
+    allergy: "Yes",
+    lifestyle: "Family",
+    description:
+      "Small, calm and hypoallergenic. Suitable for both the elderly and families.",
+    img: "https://cdn2.thedogapi.com/images/BkrJjgcV7.jpg",
+  },
+  {
+    name: "DOBERMANN",
+    size: "Large",
+    activity: "High",
+    kids: "No",
+    allergy: "No",
+    lifestyle: "Lonely",
+    description:
+      "A loyal and protective dog, best suited for experienced owners.",
+    img: "https://cdn2.thedogapi.com/images/HyL3bl94Q.jpg",
+  },
 ];
 
 const dogContainer = document.getElementById("dogContainer");
@@ -32,7 +129,7 @@ function renderDogs() {
 
   dogContainer.innerHTML = "";
 
-  const filteredDogs = dogs.filter(dog => {
+  const filteredDogs = dogs.filter((dog) => {
     return (
       dog.name.toLowerCase().includes(searchValue) &&
       (sizeValue === "" || dog.size === sizeValue) &&
@@ -44,37 +141,47 @@ function renderDogs() {
   });
 
   if (filteredDogs.length === 0) {
-    dogContainer.innerHTML = "<p>Inga hundraser matchar dina kriterier.</p>";
+    dogContainer.innerHTML = "<p>No dog breeds match your criteria.</p>";
     return;
   }
 
-  filteredDogs.forEach(dog => {
+  filteredDogs.forEach((dog) => {
+    const isFavorite = favorites.some((fav) => fav.name === dog.name);
+
     const card = document.createElement("div");
     card.className = "card";
-    const isFavorite = favorites.some(fav => fav.name === dog.name);
     card.innerHTML = `
-      <img src="${dog.img}" alt="${dog.name}">
-      <div class="card-content">
-        <h3>${dog.name}</h3>
-        <p>${dog.description}</p>
-        <p><strong>Storlek:</strong> ${dog.size}</p>
-        <p><strong>Aktivitetsnivå:</strong> ${dog.activity}</p>
-        <p><strong>Barnvänlig:</strong> ${dog.kids === "ja" ? "Ja" : "Nej"}</p>
-        <p><strong>Allergivänlig:</strong> ${dog.allergy === "ja" ? "Ja" : "Nej"}</p>
-        <p><strong>Passar bäst för:</strong> ${dog.lifestyle}</p>
-        <button class="favorite-btn ${isFavorite ? "active" : ""}" onclick="toggleFavorite('${dog.name}')">❤️</button>
-      </div>
-    `;
+<img src="${dog.img}" alt="${dog.name}">
+<div class="card-content">
+<h3>${dog.name}</h3>
+ 
+<details class="card-details">
+<summary>Visa info</summary>
+<div class="card-info">
+<p>${dog.description}</p>
+<p><strong>Storlek:</strong> ${dog.size}</p>
+<p><strong>Aktivitetsnivå:</strong> ${dog.activity}</p>
+<p><strong>Barnvänlig:</strong> ${dog.kids}</p>
+<p><strong>Allergivänlig:</strong> ${dog.allergy}</p>
+<p><strong>Passar bäst för:</strong> ${dog.lifestyle}</p>
+</div>
+</details>
+ 
+<button class="favorite-btn ${
+      isFavorite ? "active" : ""
+    }" onclick="toggleFavorite('${dog.name}')">❤️</button>
+</div>
+`;
     dogContainer.appendChild(card);
   });
 }
 
 function toggleFavorite(dogName) {
-  const dog = dogs.find(d => d.name === dogName);
-  const exists = favorites.find(fav => fav.name === dogName);
+  const dog = dogs.find((d) => d.name === dogName);
+  const exists = favorites.find((fav) => fav.name === dogName);
 
   if (exists) {
-    favorites = favorites.filter(fav => fav.name !== dogName);
+    favorites = favorites.filter((fav) => fav.name !== dogName);
   } else {
     favorites.push(dog);
   }
@@ -88,13 +195,13 @@ function renderFavorites() {
     favoriteList.innerHTML = "<p>Inga favoriter ännu ❤️</p>";
     return;
   }
-  favorites.forEach(dog => {
+  favorites.forEach((dog) => {
     const favCard = document.createElement("div");
     favCard.className = "fav-card";
     favCard.innerHTML = `
-      <img src="${dog.img}" alt="${dog.name}">
-      <h4>${dog.name}</h4>
-    `;
+<img src="${dog.img}" alt="${dog.name}">
+<h4>${dog.name}</h4>
+`;
     favoriteList.appendChild(favCard);
   });
 }
