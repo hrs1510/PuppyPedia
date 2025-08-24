@@ -222,3 +222,60 @@ input {
   margin: 0.35rem 0;
   color: #555;
 }
+#newsletter {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 2em 1em;
+  max-width: 400px;
+  margin: 2em auto;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+#newsletter h2 {
+  margin-bottom: 1em;
+  font-size: 1.3em;
+  color: #333;
+}
+
+#newsletterForm {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  align-items: center;
+}
+
+#newsletterForm label {
+  font-weight: 500;
+  color: #444;
+}
+#newsletterForm input[type="email"] {
+  padding: 0.5em 1em;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+  font-size: 1em;
+  width: 100%;
+  max-width: 250px;
+  box-sizing: border-box;
+}
+
+#newsletterForm button {
+  background: #4e8cff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.6em 1.5em;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+#newsletterForm button:hover {
+  background: #2563eb;
+}
+#newsletterMessage {
+  min-height: 1.5em;
+  color: #2563eb;
+  font-size: 1em;
+  margin-top: 0.5em;
+}

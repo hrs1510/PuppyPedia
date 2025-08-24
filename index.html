@@ -85,7 +85,21 @@
       <h2>PuppyPedia</h2>
       <div class="favorite-list" id="favoriteList"></div>
     </section>
-
+    <section id="newsletter">
+      <h2>Prenumerera på vårt nyhetsbrev</h2>
+      <form id="newsletterForm" autocomplete="off">
+        <label for="newsletterEmail">E-postadress:</label>
+        <input
+          type="email"
+          id="newsletterEmail"
+          name="newsletterEmail"
+          required
+          placeholder="Ange din e-post"
+        />
+        <button type="submit">Prenumerera</button>
+      </form>
+      <div id="newsletterMessage"></div>
+    </section>
     <footer>
       <p>&copy; 2025 PuppyPedia.se</p>
     </footer>
